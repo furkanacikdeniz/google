@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            display: block; 
+            margin: auto;
+        }
+        #search-bar{
+            background: rgb(189, 189, 189);
+            text-align: center;
+            padding: 5px;
+        }
+        button{
+            padding: 5px;
+        }
+        #search-box{
+            height: 25px;
+            width: 350px;
+            border-radius: 2px;
+            border: 1px solid grey;
+        }
+        li{
+            list-style: none;
+        }
+        #parts {
+        display: flex;
+        margin-top: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+        
+        text-align: center; /* Orta divi yatayda ortalar */
+
+        }
+
+        #first-part {
+            width: 35%; /* İki sol taraftaki div için eşit genişlik */
+        background-color: rgba(127, 255, 212, 0.589);
+        
+        }
+        #second-part{
+            margin-left: 0.25%;
+            width: 24.5%;
+            background-color: rgba(104, 224, 184, 0.449);
+        }
+        #third-part {
+        background-color: rgba(101, 202, 168, 0.505);
+        margin-left: auto; /* Sağa hizalanır */
+        
+        width: 40%; /* Sağ taraftaki divin genişliği */
+        }
+        footer{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="img/google.jpg" alt="logo">
+    <div id="search-bar">
+        <p>Search the web using Google!</p>
+        <input type="text" name="search" id="search-box">
+        <div >
+            <button>Google Search</button>
+            <button>I'm feeling lucky</button>
+        </div>
+    </div>
+    <div id="parts">
+        <div id="first-part">
+            <p>Special Searches</p>
+            <li><a href="#">Stanford Search</a></li>
+            <li><a href="#">Linux Search</a></li>
+        </div>
+        <div id="second-part">
+            <li><a href="#">Help!</a></li>
+            <li><a href="#">About Google!</a></li>
+            <li><a href="#">Company Info</a></li>
+            <li><a href="#">Google! Logos</a></li>
+        </div>
+        <div id="third-part" style="margin-right: 0px ;">
+            <p>Get Google! <br>uptades monthly:</p>
+            <input type="text" placeholder="your e-mail">
+            <div>
+                <button>Subscribe</button>
+                <a href="#">Archive</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © 1998 Google Inc.</p>
+    </footer>
+</body>
+</html>
